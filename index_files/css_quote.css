@@ -1,0 +1,480 @@
+﻿@font-face {
+    font-family: "SFD-Bold";
+    src: url('https://vtv1.mediacdn.vn/web_font/SFD-Bold.woff2') format('woff2'), url('https://vtv1.mediacdn.vn/web_font/SFD-Bold.woff') format('woff'), url('https://vtv1.mediacdn.vn/web_font/SFD-Bold.ttf') format('truetype'), url('https://vtv1.mediacdn.vn/web_font/SFD-Bold.eot?') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: "SFD-Semibold";
+    src: url("https://vtv1.mediacdn.vn/web_font/SFD-Semibold.woff2") format('woff2'), url('https://vtv1.mediacdn.vn/web_font/SFD-Semibold.woff') format('woff'), url('https://vtv1.mediacdn.vn/web_font/SFD-Semibold.ttf') format('truetype'), url('https://vtv1.mediacdn.vn/web_font/SFD-Semibold.eot?') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: "SFD-Regular";
+    src: url("https://vtv1.mediacdn.vn/web_font/SanFranciscoDisplay-Regular.ttf") format('truetype'), url("https://vtv1.mediacdn.vn/web_font/SanFranciscoDisplay-Regular.eot") format('embedded-opentype');
+}
+
+.VCSortableInPreviewMode.highlight {
+    border-left: 2px solid #CC0000;
+    padding-left: 15PX;
+}
+
+.VCSortableInPreviewMode[type=highlightquote] {
+    font-weight: bold;
+    line-height: 25px;
+    position: relative;
+}
+
+    .VCSortableInPreviewMode[type=highlightquote] p {
+        font-size: 16px;
+        margin: 0 !important;
+    }
+
+    .VCSortableInPreviewMode[type=highlightquote] .quotemark,
+    .VCSortableInPreviewMode[type=highlightquote][data-type="2"]:not(.highlight):before {
+        content: '';
+        background-image: url(https://sohanews.mediacdn.vn/web_images/bigs-iconquote.png);
+        background-size: 18px 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 18px;
+        height: 16px;
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+
+    .VCSortableInPreviewMode[type=highlightquote] a {
+        font-family: SFD-Regular;
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: normal;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote] a.quotelink {
+            color: #666666;
+        }
+
+    .VCSortableInPreviewMode[type=highlightquote] .quoteauthor {
+        color: #588da8;
+    }
+
+    .VCSortableInPreviewMode[type=highlightquote] .quotecontent {
+        padding: 15px 0;
+        border-bottom: 1px solid #D9DADE;
+        text-align: center;
+    }
+
+    .VCSortableInPreviewMode[type=highlightquote] .quoteinfo {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 23px;
+        color: #666666;
+        padding-top: 7px;
+        border-top: 1px solid #FFFFFF;
+        font-weight: normal;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote] .quoteinfo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="1"] {
+        padding-left: 15px;
+    }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="2"]:not(.highlight) {
+        float: left;
+        width: 323px;
+        border-left: 0;
+        padding-left: 0;
+        margin-right: 15px;
+        margin-top: 6px;
+        font-weight: normal;
+        background: #F0F1F5;
+        padding: 10px 15px 10px 20px;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="2"]:not(.highlight):before {
+            margin-left: 0;
+        }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="2"].highlight {
+        background: #F0F1F5;
+        padding-top: 13px;
+        font-weight: normal;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        padding-bottom: 0;
+        border-radius: 3px;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="2"].highlight .hightlightcontent {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #D9DADE;
+            font-size: 15px;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="2"].highlight .hightlightlink {
+            padding: 6px 0;
+            border-top: 1px solid #fff;
+            text-align: right;
+            display: block;
+        }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="3"],
+    .VCSortableInPreviewMode[type=highlightquote][data-type="4"],
+    .VCSortableInPreviewMode[type=highlightquote][data-type="5"] {
+        background: #F0F1F5;
+        border-left: 0;
+        padding: 14px 19px 10px 20px;
+        border-radius: 4px;
+    }
+
+
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="4"] .quotemark {
+            width: 25px;
+            height: 20px;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            margin-left: -12.5px;
+            background-color: #F0F1F5;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="5"] {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="5"] .quoteinfo {
+            flex-direction: column;
+            border-top: none;
+            border-bottom: 1px solid #D9DADE;
+            padding-bottom: 5px;
+            padding-top: 0;
+        }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="5"] .quoteinfo img {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="5"] .quotecontent {
+            padding-bottom: 15px;
+            border-bottom: none;
+            padding-top: 14px;
+            border-top: 1px solid #fff;
+            margin-bottom: 6px;
+            text-indent: 30px;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="5"] .quotemark {
+            position: absolute;
+            margin: 0;
+            top: 95px;
+            left: 29px;
+        }
+    /*.VCSortableInPreviewMode[type=highlightquote] {
+    font-weight: bold;
+    line-height: 25px;
+    position: relative;
+}*/
+
+    .VCSortableInPreviewMode[type=highlightquote] a:after,
+    .VCSortableInPreviewMode[type="readmore"]:not([data-type="1"]) a:last-child:after {
+        content: '';
+        background-image: url(https://sohanews.mediacdn.vn/web_images/bigs-iconsharelink.png);
+        background-size: 14px 12px;
+        width: 14px;
+        height: 12px;
+        display: inline-block;
+        margin-left: 8px;
+    }
+
+    /*.VCSortableInPreviewMode[type=highlightquote] p {
+        font-size: 16px;
+    }
+
+    .VCSortableInPreviewMode[type=highlightquote] a {
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 23px;
+        color: #666666;
+        font-weight: normal;
+    }
+
+    
+
+    .VCSortableInPreviewMode[type=highlightquote] .quoteinfo {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 23px;
+        color: #666666;
+        padding-top: 7px;
+        border-top: 1px solid #FFFFFF;
+        font-weight: normal;
+    }*/
+
+    /*.VCSortableInPreviewMode[type=highlightquote] .quoteinfo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+
+    .VCSortableInPreviewMode[type=highlightquote] img {
+        object-fit: cover;
+    }*/
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="2"].highlight {
+        border-left: 3px solid #588DA8;
+        border-radius: 0px 4px 4px 0px;
+        padding: 20px;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="2"].highlight .hightlightcontent {
+            font-family: SFProDisplay-Regular;
+            font-size: 17px;
+            line-height: 150%;
+            border-bottom: none;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="2"].highlight .hightlightlink {
+            padding: 0;
+            border-top: none;
+            text-align: left;
+            color: #3366CC;
+        }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="2"].highlight .hightlightlink:after {
+                background-image: url(https://sohanews.mediacdn.vn/web_images/bigs-iconsharelinkblue.png);
+                background-size: 10px;
+                width: 10px;
+                height: 11px;
+                margin-left: 5px;
+            }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="3"],
+    .VCSortableInPreviewMode[type=highlightquote][data-type="6"],
+    .VCSortableInPreviewMode[type=highlightquote][data-type="7"],
+    .VCSortableInPreviewMode[type=highlightquote][data-type="8"],
+    .VCSortableInPreviewMode[type=highlightquote][data-type="9"] {
+        background: #F0F1F5;
+        border-radius: 4px;
+        padding: 20px;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="3"] .quotemark,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="6"] .quotemark,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quotemark,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="8"] .quotemark,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="9"] .quotemark {
+            content: '';
+            background-repeat: no-repeat;
+            background-position: center;
+            display: block;
+            margin-left: 5px;
+            background-image: url(https://sohanews.mediacdn.vn/web_images/bigs-iconquote_new.png);
+            background-size: 26px 20px;
+            width: 26px;
+            height: 20px;
+            margin-bottom: 15px;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="3"] .quotecontent,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="4"] .quotecontent,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="5"] .quotecontent,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="6"] .quotecontent,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quotecontent,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="8"] .quotecontent,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="9"] .quotecontent {
+            font-family: SFD-Bold;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+            border-bottom: none;
+            text-align: left;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="3"] .quoteinfo,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="6"] .quoteinfo,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quoteinfo,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="8"] .quoteinfo,
+        .VCSortableInPreviewMode[type=highlightquote][data-type="9"] .quoteinfo {
+            padding-top: 0;
+            border-top: none;
+        }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="3"] .quoteinfo img {
+                width: 26px;
+                height: 26px;
+                margin-right: 8px;
+            }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="3"] .quoteinfo .quoteauthor {
+                font-family: SFD-Semibold;
+                font-size: 13px;
+                line-height: 16px;
+                color: #588DA8;
+            }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="3"] .quoteinfo .quotelink {
+                font-family: SFD-Regular;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: right;
+                color: #888888;
+            }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="6"] {
+        padding: 20px 60px;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="6"] .quotemark {
+            margin: 0 auto 15px !important;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="6"] .quotecontent {
+            text-align: center;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="6"] .quoteinfo {
+            font-family: SFD-Semibold;
+            font-size: 15px;
+            line-height: 130%;
+            color: #888888;
+            text-align: center;
+            display: block;
+        }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="7"] {
+        padding: 20px 60px;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quotemark {
+            margin: 0 auto 15px !important;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quotecontent {
+            text-align: center;
+        }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quoteinfo {
+            flex-direction: column;
+        }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quoteinfo img {
+                margin: 0 auto 8px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quoteinfo .quotelink {
+                margin: 0 auto 2px;
+                font-family: SFD-Semibold;
+                font-size: 15px;
+                line-height: 130%;
+                color: #588DA8;
+            }
+
+                .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quoteinfo .quotelink:after {
+                    background-image: url(https://sohanews.mediacdn.vn/web_images/bigs-iconsharelinkblue_new.png);
+                    background-size: 10px;
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 5px;
+                }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="7"] .quoteinfo .quoteauthor {
+                font-family: SFD-Regular;
+                font-size: 13px;
+                line-height: 16px;
+                color: #888888;
+            }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="8"] {
+        text-align: left;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="8"] .quoteinfo {
+            display: block;
+        }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="8"] .quoteinfo img {
+                float: left !important;
+                width: 50px;
+                height: 50px;
+            }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="8"] .quoteinfo .quoteauthor {
+                font-family: SFD-Semibold;
+                font-size: 15px;
+                line-height: 130%;
+                color: #588DA8;
+                width: calc(100% - 65px);
+                display: inline-block;
+            }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="8"] .quoteinfo .quotelink {
+                font-family: SFD-Regular;
+                font-size: 13px;
+                line-height: 16px;
+                color: #888888;
+                width: calc(100% - 65px);
+                display: inline-block;
+            }
+
+                .VCSortableInPreviewMode[type=highlightquote][data-type="8"] .quoteinfo .quotelink:after {
+                    background-repeat: no-repeat;
+                    background-size: 9px;
+                    width: 9px;
+                    height: 8px;
+                }
+
+    .VCSortableInPreviewMode[type=highlightquote][data-type="9"] {
+        position: relative;
+        padding-right: 130px;
+        text-align: left;
+    }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="9"] .quoteinfo {
+            position: absolute;
+            top: 58px;
+            right: 20px;
+        }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="9"] .quoteinfo img {
+                width: 90px;
+                height: 90px;
+                margin: 0;
+            }
+
+        .VCSortableInPreviewMode[type=highlightquote][data-type="9"] .quotelink {
+            font-family: SFD-Semibold;
+            font-size: 15px;
+            line-height: 130%;
+            color: #588DA8;
+        }
+
+            .VCSortableInPreviewMode[type=highlightquote][data-type="9"] .quotelink:after {
+                background-image: url(https://sohanews.mediacdn.vn/web_images/bigs-iconsharelinkblue_new.png);
+                background-size: 10px;
+                width: 10px;
+                height: 10px;
+                margin-left: 5px;
+            }
